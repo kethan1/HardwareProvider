@@ -1,12 +1,16 @@
 Metadata-Version: 2.1
-Name: Hardware-InformationProvider
-Version: 0.0.3
+Name: HardwareProvider
+Version: 0.0.2
 Summary: A package used to get hardware info and specs. 
 Home-page: https://github.com/kethan1/Hardware-Info
 Author: Kethan
 Author-email: kethan@vegunta.com
 License: UNKNOWN
-Description: This package finds info about the hardware. The github page is https://github.com/kethan1/Hardware-Info.
+Description: This package finds info about the hardware. 
+        
+        The github page is: https://github.com/kethan1/HardwareProvider.
+        
+        The pypi page is: https://pypi.org/project/HardwareProvider/
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License

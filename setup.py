@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Hardware_InformationProvider",
-    version="0.0.3",
+    name="HardwareProvider",
+    version="0.0.2",
     author="Kethan",
     author_email="kethan@vegunta.com",
     description="A package used to get hardware info and specs. ",
