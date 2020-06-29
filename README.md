@@ -1,0 +1,1 @@
+This package finds info about the hardware. The github page is https://github.com/kethan1/Hardware-Info.

@@ -1,0 +1,9 @@
+README.md
+setup.py
+Hardware_InformationProvider.egg-info/PKG-INFO
+Hardware_InformationProvider.egg-info/SOURCES.txt
+Hardware_InformationProvider.egg-info/dependency_links.txt
+Hardware_InformationProvider.egg-info/requires.txt
+Hardware_InformationProvider.egg-info/top_level.txt
+System Info/__init__.py
+System Info/system-info-file.py
