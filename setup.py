@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="HardwareProvider",
-    version="0.0.6",
+    version="0.0.7",
     author="Kethan",
     author_email="kethan@vegunta.com",
     description="A package used to get hardware info and specs. ",
