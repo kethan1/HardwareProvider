@@ -16,15 +16,15 @@ setuptools.setup(
     install_requires=[
         'psutil', 
         'py-cpuinfo', 
-        'speedtest-cli', 
-        'wmi; platform_system=="Windows"', 
-        'pywin32; platform_system=="Windows"', 
+        'speedtest',
+        'wmi; platform_system=="Windows"',
+        'pywin32; platform_system=="Windows"',
         'WinTmp; platform_system=="Windows"'
-        ],
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.5',
+    python_requires='>=3.3',
 )
