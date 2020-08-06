@@ -1,4 +1,4 @@
-#HardwareProvider
+# HardwareProvider
 
 This package finds info about the hardware. 
 
