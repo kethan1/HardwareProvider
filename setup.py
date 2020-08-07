@@ -19,7 +19,8 @@ setuptools.setup(
         'speedtest-cli',
         'wmi; platform_system=="Windows"',
         'pywin32; platform_system=="Windows"',
-        'WinTmp; platform_system=="Windows"'
+        'WinTmp; platform_system=="Windows"',
+        'MacTmp; platform_system=="Darwin"'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

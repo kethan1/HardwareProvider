@@ -41,8 +41,10 @@ class CPU:
             return psutil.sensors_temperatures(fahrenheit=fahrenheit)['coretemp']
         elif platform.system() == 'Windows':
             import WinTmp
-
             return WinTmp.CPU_Temp()
+        elif platform.system() == 'Darwin':
+            import MacTmp
+            return MacTmp.CPU_Temp()
 
 
 class GPU:
@@ -67,6 +69,9 @@ class GPU:
             import WinTmp
 
             return WinTmp.GPU_Temp()
+        elif platform.system() == 'Darwin':
+            import MacTmp
+            return MacTmp.GPU_Temp()
     
 class Ram:
     
