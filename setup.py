@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="HardwareProvider",
-    version="0.1.4",
+    version="0.1.7",
     author="Kethan",
     author_email="kethan@vegunta.com",
     description="A package used to get hardware info and specs. ",
@@ -16,7 +16,7 @@ setuptools.setup(
     install_requires=[
         'psutil', 
         'py-cpuinfo', 
-        'speedtest',
+        'speedtest-cli',
         'wmi; platform_system=="Windows"',
         'pywin32; platform_system=="Windows"',
         'WinTmp; platform_system=="Windows"'

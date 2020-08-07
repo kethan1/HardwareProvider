@@ -2,3 +2,4 @@
 /dist/*
 /HardwareProvider.egg-info/*
 /.vscode/*
+/HardwareProvider/__pycache__/*

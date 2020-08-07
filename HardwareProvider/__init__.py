@@ -34,7 +34,39 @@ class CPU:
     @staticmethod
     def percent(time=0.2):
         return psutil.cpu_percent(time) 
-    
+
+    @staticmethod
+    def temp(fahrenheit=False):
+        if platform.system() == 'Linux':
+            return psutil.sensors_temperatures(fahrenheit=fahrenheit)['coretemp']
+        elif platform.system() == 'Windows':
+            import WinTmp
+
+            return WinTmp.CPU_Temp()
+
+
+class GPU:
+
+    @staticmethod
+    def Get_Gpus(multiple=False):
+        if platform.system() == 'Windows':
+            import wmi
+
+            computer = wmi.WMI()
+
+            if multiple:
+                return [gpu.name for gpu in computer.Win32_VideoController()]    
+            else:
+                return computer.Win32_VideoController()[0]
+
+    @staticmethod
+    def temp():
+        if platform.system() == 'Linux':
+            return psutil.sensors_temperatures(fahrenheit=fahrenheit)
+        elif platform.system() == 'Windows':
+            import WinTmp
+
+            return WinTmp.GPU_Temp()
     
 class Ram:
     
@@ -189,14 +221,6 @@ class System:
             return psutil.sensors_fans()
         else:
             return None
-    
-    
-    @staticmethod
-    def temp(fahrenheit=False):
-        if platform.system() == 'Linux':
-            return psutil.sensors_temperatures(fahrenheit=fahrenheit)
-        elif platform.system() == 'Windows':
-            pass
     
     
     @staticmethod
